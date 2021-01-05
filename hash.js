@@ -2,7 +2,7 @@ $(function () {
     $('[data-toggle="popover"]').popover()
 })
 
-let Tate = true;
+let side = true;
 
 let copyFlag = true;
 
@@ -41,10 +41,10 @@ $(function () {
         var val = $(this).val();
         // コンソールログで確認
         if (val === 'true'){
-            Tate = true;
+            side = true;
             change();
         }else{
-            Tate = false;
+            side = false;
             change();
         }
     });
@@ -53,10 +53,10 @@ $(function () {
 const change = () => {
     const input = document.getElementById('input');
     const output = document.getElementById('output');
-    if (Tate){
-        output.value = '＃' + input.value.replace(/\s+/g,'\n＃');
-    }else{
+    if (side){
         output.value = '＃' + input.value.replace(/\s+/g,' ＃');
+    }else{
+        output.value = '＃' + input.value.replace(/\s+/g,'\n＃');
     }
     
     if (input.value.length === 0){
