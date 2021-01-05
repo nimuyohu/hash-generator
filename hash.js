@@ -17,15 +17,11 @@ function copyToClipboard() {
     document.execCommand("Copy");
 
     setTimeout(() => {
-        console.log('click1')
-        console.log(copyFlag)
         if (copyFlag) {
             $('#copy').click();
-            console.log('click2')
         }
         copyFlag = !copyFlag;
     },1000);
-    console.log(copyFlag)
 }
 
 const tweet = () => {
