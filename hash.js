@@ -31,7 +31,7 @@ function copyToClipboard() {
 const tweet = () => {
     const text = document.getElementById('output').value
     console.log(text)
-    window.open("https://twitter.com/intent/tweet?text="+`${encodeURIComponent(text+'\n\n')}`+'&hashtags=ハッシュタグジェネレーター')
+    window.open("https://twitter.com/intent/tweet?text="+`${encodeURIComponent(text+'\n\n'+'https://hashgenerator.netlify.app/'+'\n')}`+'&hashtags=ハッシュタグジェネレーター')
 }
 
 $(function () {
