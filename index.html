@@ -14,12 +14,12 @@
     <script src="hash.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-light bg-primary">
+    <nav class="navbar navbar-light bg-primary mb-2">
         <a class="navbar-brand text-light">＃ハッシュダグジェネレーター</a>
     </nav>
     <div class='container'>
         <h4>ハッシュタグを簡単に作れるサービスです</h4>
-        <div class="btn-group btn-group-toggle " data-toggle="buttons">
+        <div class="btn-group btn-group-toggle mb-3" data-toggle="buttons">
             <label class="btn btn-outline-primary active">
                 <input type="radio" name="options" id="option1" autocomplete="off" checked　 value=true> 横に並べる
             </label>
@@ -27,10 +27,9 @@
                 <input type="radio" name="options" id="option2" autocomplete="off" value=false> 縦に並べる
             </label>
         </div>
-        <textarea  class="form-control mx-auto" aria-label="With textarea" id="input" cols="30" rows="5" onkeyup="change()" placeholder="入力してね"></textarea>
-        <p>自動変換↓</p>
+        <textarea  class="form-control mx-auto mb-3" aria-label="With textarea" id="input" cols="30" rows="5" onkeyup="change()" placeholder="入力してね"></textarea>
         <textarea  class="form-control mx-auto" aria-label="With textarea" id="output" cols="30" rows="8" placeholder="結果が出力されるよ"></textarea>
-        <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="copyToClipboard()" data-container="body" data-toggle="popover" data-placement="top" data-content="コピーしました！" id='copy'>コピーする</button>
+        <button type="button" class="btn btn-secondary btn-lg btn-block mt-2" onclick="copyToClipboard()" data-container="body" data-toggle="popover" data-placement="top" data-content="コピーしました！" id='copy'>コピーする</button>
         <button type="button" class="btn btn-primary btn-lg btn-block" onclick="tweet()">ツイートする</button>
     </div>
 </body>
