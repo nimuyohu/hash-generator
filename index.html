@@ -33,7 +33,7 @@
                 <input type="radio" name="options" id="option2" autocomplete="off" value=false> 縦に並べる
             </label>
         </div>
-        <textarea  class="form-control mx-auto mb-3" aria-label="With textarea" id="input" cols="30" rows="5" onkeyup="change()" placeholder="空白か改行すると'#'が付くよ（1文目は不要）"></textarea>
+        <textarea  class="form-control mx-auto mb-3" aria-label="With textarea" id="input" cols="30" rows="5" oninput="change()" placeholder="空白か改行すると'#'が付くよ（1文目は不要）"></textarea>
         <textarea  class="form-control mx-auto" aria-label="With textarea" id="output" cols="30" rows="8" placeholder="結果が出力されるよ"></textarea>
         <button type="button" class="btn btn-secondary btn-lg btn-block mt-2" onclick="copyToClipboard()" data-container="body" data-toggle="popover" data-placement="top" data-content="コピーしました！" id='copy'>コピーする</button>
         <button type="button" class="btn btn-info btn-lg btn-block mb-2" onclick="tweet()">ツイートする</button>
